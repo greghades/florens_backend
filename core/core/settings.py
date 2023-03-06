@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     #Third Aplications
     'rest_framework',
     'rest_framework.authtoken',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -88,21 +89,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'NAME': 'sqlite3.db',
     }
 }
 
 
-"""{
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "florens_db",
-        'USER': "gregori",
-        'PASSWORD': "fender25",
-        'HOST': "localhost",
-        'PORT': 5432,
-    }
-}"""
 
 
 # Password validation
